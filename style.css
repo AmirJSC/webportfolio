@@ -23,7 +23,7 @@
 	font-weight: 600;
   	/* Create the gradient. */
   	/* #bdc3c7, #2c3e50 for gray */
-  	background-image: linear-gradient(45deg,#E45447, #ff5e62, #f3ec78);
+  	background-image: linear-gradient(45deg,#E45447 10%,#ff9966 60%, #f3ec78 100%);
 	 background-size: 100%;
 	 background-repeat: repeat;
 	 -webkit-background-clip: text;
@@ -31,7 +31,6 @@
 	 -moz-background-clip: text;
 	 -moz-text-fill-color: transparent;
 }
-
 
 
 .red-text {
@@ -168,10 +167,6 @@ ul li::before {
 	}
 }
 
-
-
-
-
 .circle {
   line-height: 24px;
   border-radius: 50%;
@@ -181,6 +176,44 @@ ul li::before {
   color: #E45447;
   text-align: center;
   border: 3px solid #E45447;
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }
 
 
@@ -195,10 +228,7 @@ ul li::before {
 
 
 
-
 /* For the moving animation */
-
-
 #name-text{
   animation: glitch 1s linear infinite;
 }

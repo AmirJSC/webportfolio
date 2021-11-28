@@ -165,10 +165,57 @@
 				</div>
 			</section>
 			<!-- End of Projects -->
+			<!-- Start of Experience -->
+			<section class="mx-auto ml-md-5 my-5 pt-5">
+				<h2>Experience</h2>
+				<div class="red-line"></div>
+				<div class="mb-5"></div>
+				<!-- Structure -->
+				<div class="tab">
+				 	<button class="tablinks" onclick="opendesc(event, 'FBQ')" id="defaultOpen">Florida Best Quote</button>
+				 	<button class="tablinks" onclick="opendesc(event, 'JFS')">JFS Electrical Corporation</button>
+				 	<button class="tablinks" onclick="opendesc(event, 'Educ')">Education</button>
+				</div>
+				<div id="FBQ" class="tabcontent">
+				 	<p>London is the capital city of England.</p>
+				</div>
+				<div id="JFS" class="tabcontent">
+				 	<p>Paris is the capital of France.</p> 
+				</div>
+				<div id="Educ" class="tabcontent">
+					<p>Tokyo is the capital of Japan.</p>
+				</div>
+				<!-- JS portion -->
+				<script>
+				function opendesc(evt, Job) {
+				 	var i, tabcontent, tablinks;
+					tabcontent = document.getElementsByClassName("tabcontent");
+					for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+					}
+
+				 	tablinks = document.getElementsByClassName("tablinks");
+				 	for (i = 0; i < tablinks.length; i++) {
+				    tablinks[i].className = tablinks[i].className.replace(" active", "");
+				  }
+				  
+				 
+				 	document.getElementById(Job).style.display = "block";
+				 	evt.currentTarget.className += " active";
+				}
+					document.getElementById("defaultOpen").click();
+				</script>				
+
+
+
+
+
+
+
+
+
+
 		</main>
-
-
-
 		<!-- JS Dependencies -->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
