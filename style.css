@@ -1,10 +1,10 @@
 /* Import Fonts */
-
 /* Overwriting the Defaults */
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 .red-text {
@@ -60,7 +60,7 @@ ul li::before {
   opacity: 1;
   width: 100%;
   height: auto;
-  transition: 1s ease;
+  transition: .8s ease;
 }
 
 .middle {
@@ -74,7 +74,7 @@ ul li::before {
   text-align: center;
 }
 .con:hover .image {
-	opacity: .3;
+	opacity: .1;
 }
 .con:hover .middle {
 	opacity: 1;
