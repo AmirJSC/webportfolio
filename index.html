@@ -19,7 +19,7 @@
 		<!-- NavBar -->
 		<nav class="navbar navbar-expand-md navbar-light p-3">
 			<a class="navbar-brand pl-2" href="./index.html">
-			<img src="https://cdn-icons-png.flaticon.com/512/12/12580.png" width="30" height="30" class="d-inline-block align-top" alt=""></a>
+			<div width="30" height="30" class="d-inline-block align-top circle">A</div></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -59,15 +59,15 @@
 			</div>
 			<hr class="mt-0"></hr>
 			<!-- Start of About Me -->
-			<section class="mx-auto mb-5 p-5">
+			<section class="mx-auto ml-sm-5 my-5 pt-5">
 				<h2>About Me</h2>
 				<div class="red-line"></div>
 				<div class="mb-5"></div>
 				<div class="row">
-					<div class="class=col-lg-6 border mx-auto order-lg-2">
+					<div class="class=col-lg-5 border mx-auto order-lg-2">
 						<img src="./images/picture-id.jpg" alt="Profile picture">
 					</div>
-					<div class="col-lg-6 order-lg-1 mx-0 pr-0">
+					<div class="col-lg-7 order-lg-1 mx-0 pr-sm-0">
 						<p>I am Amir and I am passionate about Web Development and Automation. My interest in programming started back in
 						2019 when I worked on a <span class="red-text">Flask website that displayed real-time data</span> for our Solar Tracker project. Ever since then,
 						whenever we had group projects in my engineering classes, I was the guy who worked with code.</p>
@@ -79,17 +79,15 @@
 						<p>When I am not coding, I'm either reading a book or cycling. 
 						Here are the few technologies I have worked with:
 						<div class="row">
-							<ul class="ml-5 col-4">
+							<ul class="ml-4 col-5">
 								<li>MongoDB</li>
-								<li>Express</li>
 								<li>React</li>
 								<li>Node.js</li>
 							</ul>							
-							<ul class="col-4">
-								<li>MongoDB</li>
-								<li>Express</li>
-								<li>React</li>
-								<li>Node.js</li>
+							<ul class="col-5">
+								<li>Django</li>
+								<li>Flask</li>
+								<li>Bootsrap</li>
 							</ul>
 						</div>
 						</p>
@@ -98,19 +96,20 @@
 			</section>
 			<!-- End of About Me -->
 			<!-- Start of Projects -->
-			<section class="mx-auto my-5">
+			<section class="mx-auto ml-sm-5 my-5">
 				<h2>My Projects</h2>
 				<div class="red-line"></div>
 				<div class="mb-5"></div>
 				<div class="row">
-						<div class="col-lg-6 mx-auto proj-img">
-							<img src="./images/indeed scraper.png" alt="Indeed Scraper" id="indeed-scraper" >
+						<div class="col-lg-6 mx-auto con">
+							<img src="./images/indeed scraper.png" alt="Indeed Scraper" class="image" >
+							<div class="middle">
+								<p class="red-text">Featured Project</p>
+								<h3>Indeed Scraper</h3>
+								<p>A beginner Python project built with SQlite and Dash.</p>
+							</div>
 						</div>
-						<div class="col-lg-5 mx-auto pr-0">
-							<p class="red-text">Featured Project</p>
-							<h3>Indeed Scraper</h3>
-							<p class="border p-2">A beginner Python project built with SQlite and Dash, this program allows one to scrape job postings from ph.indeed.com 
-							and view the data on the web browser. It can extract the type of job, company name, salary, location and job description.</p>
+						<div class="">
 							<a href="#" target="_blank" class="blue-remove"><li class="fab fa-github fa-lg"></li></a>
 						</div>
 				</div>
@@ -123,6 +122,7 @@
 			</section>
 
 			<!-- End of Projects -->
+			<div class="circle text-center">A</div>
 		</main>
 
 
