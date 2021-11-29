@@ -4,6 +4,9 @@
 /* Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300&family=Titillium+Web:wght@300;600&display=swap');
 
+html {
+	scroll-behavior: smooth; 
+}
 
 /* Overwriting the Defaults */
 * {
