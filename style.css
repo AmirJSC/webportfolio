@@ -94,6 +94,8 @@ ul li::before {
 
 .middle {
   transition: .8s ease;
+  width: 100%;
+  height: auto;
   opacity: 0;
   position: absolute;
   top: 50%;
