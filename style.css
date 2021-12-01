@@ -103,10 +103,15 @@ ul li::before {
   text-align: center;
 }
 .con:hover .image {
-	opacity: .1;
+	opacity: .08;
 }
 .con:hover .middle {
 	opacity: 1;
+}
+
+/* Image Border */
+.div-border {
+  box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -117,6 +122,7 @@ ul li::before {
 #landing-text {
 	width: 50%;
 }
+/* For the Check out my blog! button */
 .border-custom {
 	width: 18%;
     color: white;
