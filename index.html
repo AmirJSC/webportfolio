@@ -23,12 +23,12 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse justify-content-end mr-3" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-					<a class="nav-link mx-3" href="#About-me">About<span class="sr-only">(current)</span></a>
-					<a class="nav-link mx-3" href="#my-projects">Project</a>
-					<a class="nav-link mx-3" href="#my-experience">Experience</a>
-					<a class="nav-link mx-3" href="#my-contact">Contact</a>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+				<div class="navbar-nav nav-menu">
+					<a class="nav-link" href="#About-me">About<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#my-projects">Project</a>
+					<a class="nav-link" href="#my-experience">Experience</a>
+					<a class="nav-link mr-3" href="#my-contact">Contact</a>
 				</div>
 			</div>
 		</nav>
@@ -242,6 +242,6 @@
 		<!-- Font Awesome -->
 		<script src="https://kit.fontawesome.com/7a46a783b9.js" crossorigin="anonymous"></script>
 		<!-- Open as Default the FBQ Experience Tab -->
-		<script> window.addEventListener('load', defaultExperienceTab);</script>
+		<script> document.getElementById("defaultOpen").click(); </script>
 	</body>
 </html>

@@ -11,7 +11,12 @@
 }
 
 html {
-	scroll-behavior: smooth; 
+	scroll-behavior: smooth;  
+}
+
+.nav-menu a + a::before {
+  content:  "|";
+  padding: 2rem;
 }
 
 #name-text {

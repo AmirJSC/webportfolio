@@ -21,10 +21,6 @@ function experienceNavHamburger() {
 	}
 }
 
-function defaultExperienceTab() {
-	document.getElementById("defaultOpen").click();
-}
-
 function sendEmail() {
 	window.location = "mailto:amirj.castaneda@gmail.com";
 }
