@@ -13,7 +13,7 @@
 		<link rel = "icon" href = 
 		"https://cdn-icons-png.flaticon.com/512/12/12580.png" 
         type = "image/x-icon">
-        <!-- https://cdn3.iconfinder.com/data/icons/round-icons-vol-2/512/a-512.png -->
+        <script src="./index.js"></script>
 	</head>
 	<body>
 		<!-- NavBar -->
@@ -36,11 +36,11 @@
 		<!-- Start of main content -->
 		<main class="container">
 			<!-- Start of Top page -->
-			<section class="mx-auto ml-md-5 mt-3 mt-sm-5">
+			<section class="mx-auto ml-lg-5 mt-3 mt-sm-5">
 				<p class="red-text">Hi, my name is</p>
 				<div class="text-wrap">
 					<h2 id="name-text" class="intro-font mb-0">Amir Castañeda.</h2>
-					<h2 id="todo" class="intro-font pt-0">I build things for the web.</h2>
+					<h2 id="todo" class="intro-font py-1">I build things for the web.</h2>
 				</div>
 				<div class="mt-4">
 					<p id="landing-text">I am a Software Developer currently based in Davao, Philippines. I'm passionate
@@ -59,7 +59,7 @@
 			</div>
 			<hr class="mt-0"></hr>
 			<!-- Start of About Me -->
-			<section id="About-me" class="mx-auto ml-md-5 my-5 pt-5">
+			<section id="About-me" class="mx-auto ml-lg-5 my-5 pt-5">
 				<h2>About Me</h2>
 				<div class="red-line"></div>
 				<div class="mb-5"></div>
@@ -96,7 +96,7 @@
 			</section>
 			<!-- End of About Me -->
 			<!-- Start of Projects -->
-			<section id="my-projects" class="mx-auto ml-md-5 my-5">
+			<section id="my-projects" class="mx-auto ml-lg-5 my-5">
 				<h2>My Projects</h2>
 				<div class="red-line"></div>
 				<div class="mb-5"></div>
@@ -166,16 +166,16 @@
 			</section>
 			<!-- End of Projects -->
 			<!-- Start of Experience -->
-			<section id="my-experience" class="mx-auto ml-md-5 my-5 py-5">
+			<section id="my-experience" class="mx-auto ml-lg-5 my-5 py-5">
 				<h2>Experience</h2>
 				<div class="red-line"></div>
 				<div class="mb-5"></div>
 				<!-- Structure -->
 				<div class="tab d-flex flex-row" id="myTopnav">
-					<button class="tablinks flex-fill" onclick="openCity(event, 'FBQ')" id="defaultOpen">Florida Best Quote</button>
-					<button class="tablinks flex-fill" onclick="openCity(event, 'JFS')">JFS Electrical Corporation</button>
-					<button class="tablinks flex-fill" onclick="openCity(event, 'Educ')">Education</button>
-					<button href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<button class="tablinks flex-fill" onclick="openExperienceTab(event, 'FBQ')" id="defaultOpen">Florida Best Quote</button>
+					<button class="tablinks flex-fill" onclick="openExperienceTab(event, 'JFS')">JFS Electrical Corporation</button>
+					<button class="tablinks flex-fill" onclick="openExperienceTab(event, 'Educ')">Education</button>
+					<button href="javascript:void(0);" class="icon" onclick="experienceNavHamburger()">
 					<i class="fa fa-bars"></i>
 					</button>
 				</div>
@@ -216,35 +216,9 @@
 						<li>Getting Grounded on Analytics</li>
 						<li>Responsive Web Design - FreeCodeCamp</li>
 					</ul>
-
 				</div>
-				<script>
-					function openCity(evt, cityName) {
-					  var i, tabcontent, tablinks;
-					  tabcontent = document.getElementsByClassName("tabcontent");
-					  for (i = 0; i < tabcontent.length; i++) {
-					    tabcontent[i].style.display = "none";
-					  }
-					  tablinks = document.getElementsByClassName("tablinks");
-					  for (i = 0; i < tablinks.length; i++) {
-					    tablinks[i].className = tablinks[i].className.replace(" active", "");
-					  }
-					  document.getElementById(cityName).style.display = "block";
-					  evt.currentTarget.className += " active";
-					}
-
-					function myFunction() {
-					  var x = document.getElementById("myTopnav");
-					  if (x.className === "tab") {
-					    x.className += " responsive";
-					  } else {
-					    x.className = "tab";
-					  }
-					}
-					document.getElementById("defaultOpen").click();
-				</script>
 			</section>
-			<section id="my-contact" class="mx-auto ml-md-5 my-5 pt-5">
+			<section id="my-contact" class="mx-auto ml-lg-5 my-5 pt-5">
 				<div class="row">
 					<div class="col-12 text-center">
 						<h2>Get In Touch</h2>
@@ -253,16 +227,12 @@
 						<p class="col-sm-6">I'm happy to answer any questions about me or any projects. Just send me a message with any questions you have and I'll get back to you as soon as I can.</p>
 					</div>
 				</div>
-				<script>
-					function sendEmail() {
-    				window.location = "mailto:amirj.castaneda@gmail.com";}
-				</script>
 				<div class="d-flex flex-column align-items-center mt-3">
 					<div class="border rounded-pill text-center p-3 border-custom" onclick="sendEmail();">Send Message</div>
 					<div class="mt-5">
-						<a href="#" target="_blank" class="blue-remove"><li class="fab fa-github fa-lg mx-4"></li></a>
-						<a href="#" target="_blank" class="blue-remove"><li class="fab fa-twitter fa-lg mx-4"></li></a>
-						<a href="#" target="_blank" class="blue-remove"><li class="fab fa-linkedin fa-lg mx-4"></li></a>
+						<a href="https://github.com/AmirJSC" target="_blank" class="blue-remove"><li class="fab fa-github fa-lg mx-4"></li></a>
+						<a href="https://gitlab.com/amirj.castaneda" target="_blank" class="blue-remove"><li class="fab fa-gitlab fa-lg mx-4"></li></a>
+						<a href="https://www.linkedin.com/in/amir-jann-casta%C3%B1eda-7383271a0/" target="_blank" class="blue-remove"><li class="fab fa-linkedin fa-lg mx-4"></li></a>
 					</div>
 				</div>
 		</main>
@@ -271,5 +241,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 		<!-- Font Awesome -->
 		<script src="https://kit.fontawesome.com/7a46a783b9.js" crossorigin="anonymous"></script>
+		<!-- Open as Default the FBQ Experience Tab -->
+		<script> window.addEventListener('load', defaultExperienceTab);</script>
 	</body>
 </html>
