@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-		<!-- style.css -->
-		<link rel="stylesheet" type="text/css" href="./style.css">
-		<!-- Title -->
-		<title>Amir Castaneda</title>
-		<!-- Title Icon -->
-		<link rel = "icon" href = 
-		"https://cdn-icons-png.flaticon.com/512/12/12580.png" 
-        type = "image/x-icon">
-        <script src="./index.js"></script>
-	</head>
-	<body>
-		<!-- NavBar -->
-		<nav class="navbar navbar-expand-md navbar-light p-3">
-			<a class="navbar-brand pl-2" href="./index.html">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<!-- Title -->
+	<title>Amir Castañeda</title>
+	<!-- Title Icon -->
+	<link rel = "icon" href = 
+	"https://cdn-icons-png.flaticon.com/512/12/12580.png" 
+	type = "image/x-icon">
+</head>
+<body>
+	<!-- Start of NavBar -->
+	<nav class="navbar navbar-expand-md navbar-light p-3">
+		<a class="navbar-brand pl-2" href="./index.html">
 			<div width="30" height="30" class="d-inline-block align-top circle">A</div></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 				<div class="navbar-nav nav-menu">
-					<a class="nav-link" href="#About-me">About<span class="sr-only">(current)</span></a>
-					<a class="nav-link" href="#my-projects">Project</a>
-					<a class="nav-link" href="#my-experience">Experience</a>
-					<a class="nav-link mr-3" href="#my-contact">Contact</a>
+					<a class="nav-link pr-5" href="#about">About<span class="sr-only">(current)</span></a>
+					<a class="nav-link pr-5" href="#project_section">Project</a>
+					<a class="nav-link pr-5" href="#experience_section">Experience</a>
+					<a class="nav-link pr-5" href="#contact_section">Contact</a>
 				</div>
 			</div>
 		</nav>
@@ -36,212 +35,211 @@
 		<!-- Start of main content -->
 		<main class="container">
 			<!-- Start of Top page -->
-			<section class="mx-auto ml-lg-5 mt-3 mt-sm-5">
+			<section class="mx-auto ml-lg-5 mt-5" id="landing">
 				<p class="red-text">Hi, my name is</p>
 				<div class="text-wrap">
-					<h2 id="name-text" class="intro-font mb-0">Amir Castañeda.</h2>
-					<h2 id="todo" class="intro-font py-1">I build things for the web.</h2>
+					<h2 id="my_name" class="landing-fontsize mb-0">Amir Castañeda.</h2>
+					<h2 id="tagline" class="landing-fontsize py-1">I build things for the web.</h2>
 				</div>
 				<div class="mt-4">
-					<p id="landing-text">I am a Software Developer currently based in Davao, Philippines. I'm passionate
-					about Python, Outdoors, and Books. If you're looking for a developer to add to your team, I'd love
+					<p id="landing_text">I am a Software Developer currently based in Davao, Philippines. I'm passionate
+						about Python, Outdoors, and Books. If you're looking for a developer to add to your team, I'd love
 					to hear from you. </p>
-					<div class="border rounded-pill text-center p-3 mt-5 border-custom">
+					<div class="border rounded-pill text-center p-3 mt-5 custom-border">
 						<span>Check out my blog!</span>
 					</div>
 				</div>
+				<div class="d-flex flex-row-reverse">
+					<img id = "moving_gif" class= "mt-5" src="./images/walkcycle.gif">
+				</div>
 			</section>
 			<!-- End of the top of the Page -->
-			<div class="my-5">
-			</div>
-			<div class="d-flex flex-row-reverse">
-			<img id = "moving-gif" class= "mt-5" src="./images/walkcycle.gif">
-			</div>
-			<hr class="mt-0"></hr>
 			<!-- Start of About Me -->
-			<section id="About-me" class="mx-auto ml-lg-5 my-5 pt-5">
+			<section id="about" class="mx-auto ml-lg-5 pb-lg-5">
 				<h2>About Me</h2>
 				<div class="red-line"></div>
 				<div class="mb-5"></div>
 				<div class="row">
-					<div class="class=col-lg-5 mx-auto order-lg-2">
-						<img src="./images/picture-id.jpg" alt="Profile picture">
+					<div class="d-flex flex-column align-items-center col-lg-5 mx-auto order-lg-2 mb-3">
+						<img src="./images/profile-picture1.jpeg" class="border rounded-pill" alt="Profile picture" id="profile_picture">
+						<div class="border rounded-pill text-center p-3 mt-4" id="resume_button">
+							<span>Resume</span>
+						</div>
 					</div>
 					<div class="col-lg-7 order-lg-1 mx-0 pr-sm-0">
 						<p>I am Amir and I am passionate about Web Development and Automation. My interest in programming started back in
-						2019 when I worked on a <span class="red-text">Flask website that displayed real-time data</span> for our Solar Tracker project. Ever since then,
+							2019 when I worked on a <span class="red-text">Flask website that displayed real-time data</span> for our Solar Tracker project. Ever since then,
 						whenever we had group projects in my engineering classes, I was the guy who worked with code.</p>
 
 						<p>Presently, I am attending a <span class="red-text">Full-stack Web Development Bootcamp</span> where we focus on learning the MERN stack. I continue to hone
-						my skills in Python from several books and online courses from which I made personal projects. My main focus these days
+							my skills in Python from several books and online courses from which I made personal projects. My main focus these days
 						is learning everything I can about web development.</p>
 
 						<p>When I am not coding, I'm either reading a book or cycling. 
-						Here are the few technologies I have worked with:
-						<div class="row">
-							<ul class="ml-4 col-5">
-								<li>MongoDB</li>
-								<li>React</li>
-								<li>Node.js</li>
-							</ul>							
-							<ul class="col-5">
-								<li>Django</li>
-								<li>Flask</li>
-								<li>Bootsrap</li>
-							</ul>
-						</div>
+							Here are the few technologies I have worked with:
+							<div class="row">
+								<ul class="ml-4 col-5">
+									<li>MongoDB</li>
+									<li>React</li>
+									<li>Node.js</li>
+								</ul>							
+								<ul class="col-5">
+									<li>Django</li>
+									<li>EXpress.js</li>
+									<li>Bootsrap</li>
+								</ul>
+							</div>
 						</p>
 					</div>
 				</div>
 			</section>
 			<!-- End of About Me -->
 			<!-- Start of Projects -->
-			<section id="my-projects" class="mx-auto ml-lg-5 my-5">
+			<section id="project_section" class="mx-auto ml-lg-5 my-5 pt-lg-5">
 				<h2>My Projects</h2>
 				<div class="red-line"></div>
 				<div class="mb-5"></div>
 				<!-- 1st Row -->
 				<div class="row">
-						<!-- E-Commerce Website -->
-						<div class="col-lg-5 mx-3 my-md-2 con rounded p-0 div-border">
-							<img src="./images/E-commerce website.png" alt="Indeed Scraper" class="image" >
-							<div class="middle">
-								<p class="red-text">Featured Project</p>
-								<h3>E-Commerce Website</h3>
-								<p>This project is developed using Bootsrap, CSS, Node.JS and MongoDB.</p>
-							</div>
-						</div>
-						<!-- Node.js API -->
-						<div class="col-lg-5 mx-3 mt-3 my-md-2 con border rounded p-0 div-border">
-							<img src="./images/node api.jpeg" alt="tictactoe" class="image" >
-							<div class="middle">
-								<p class="red-text">Featured Project</p>
-								<h3>Node.js API</h3>
-								<p>An API developed for the E-Commerce Website, it's capable of handling a huge number of simultaneous requests with high throughput.</p>
-							</div>
+					<!-- E-Commerce Website -->
+					<div class="col-lg-5 mx-3 my-md-2 con rounded p-0 div-border">
+						<img src="./images/E-commerce website.png" alt="Indeed Scraper" class="project-image" >
+						<div class="middle">
+							<p class="red-text">Featured Project</p>
+							<h3>E-Commerce Website</h3>
+							<p>This project is developed using Bootsrap, CSS, Node.JS and MongoDB.</p>
 						</div>
 					</div>
+					<!-- Node.js API -->
+					<div class="col-lg-5 mx-3 mt-3 my-md-2 con border rounded p-0 div-border">
+						<img src="./images/node api.jpeg" alt="tictactoe" class="project-image" >
+						<div class="middle">
+							<p class="red-text">Featured Project</p>
+							<h3>Node.js API</h3>
+							<p>An API developed for the E-Commerce Website, it's capable of handling a huge number of simultaneous requests with high throughput.</p>
+						</div>
+					</div>
+				</div>
 				<!-- 2nd Row -->
 				<div class="row my-3">
-						<!-- Web Blog -->
-						<div class="col-lg-5 mx-3 my-md-2 con border rounded p-0 div-border">
-							<img src="./images/Django blog.png" alt="Indeed Scraper" class="image" >
-							<div class="middle">
-								<p class="red-text">Featured Project</p>
-								<h3>Web Blog</h3>
-								<p>This web app creates a blog site using Django that allows users to publish articles and to add comments.</p>
-							</div>
-						</div>
-						<!-- Website -->
-						<div class="col-lg-5 mx-3 mt-3 my-md-2 con border rounded p-0 div-border">
-							<img src="./images/portfolio-website.png" alt="tictactoe" class="image" >
-							<div class="middle">
-								<p class="red-text">Featured Project</p>
-								<h3>Portfolio Website</h3>
-								<p>My Personal Portfolio website built with Bootsrap and CSS.</p>
-							</div>
+					<!-- Web Blog -->
+					<div class="col-lg-5 mx-3 my-md-2 con border rounded p-0 div-border">
+						<img src="./images/Django blog.png" alt="Indeed Scraper" class="project-image" >
+						<div class="middle">
+							<p class="red-text">Featured Project</p>
+							<h3>Web Blog</h3>
+							<p>This web app creates a blog site using Django that allows users to publish articles and to add comments.</p>
 						</div>
 					</div>
+					<!-- Website -->
+					<div class="col-lg-5 mx-3 mt-3 my-md-2 con border rounded p-0 div-border">
+						<img src="./images/portfolio-website.png" alt="tictactoe" class="project-image" >
+						<div class="middle">
+							<p class="red-text">Featured Project</p>
+							<h3>Portfolio Website</h3>
+							<p>My Personal Portfolio website built with Bootsrap and CSS.</p>
+						</div>
+					</div>
+				</div>
 				<!-- 3rd Row -->
 				<div class="row">
-						<!-- Indeed Scraper -->
-						<div class="col-lg-5 mx-3 my-md-2 con border rounded p-0 div-border">
-							<img src="./images/indeed scraper.png" alt="Indeed Scraper" class="image" >
-							<div class="middle">
-								<p class="red-text">Featured Project</p>
-								<h3>Indeed Scraper</h3>
-								<p>A beginner Python project built with SQlite and Dash.</p>
-							</div>
+					<!-- Indeed Scraper -->
+					<div class="col-lg-5 mx-3 my-md-2 con border rounded p-0 div-border">
+						<img src="./images/indeed scraper.png" alt="Indeed Scraper" class="project-image" >
+						<div class="middle">
+							<p class="red-text">Featured Project</p>
+							<h3>Indeed Scraper</h3>
+							<p>A beginner Python project built with SQlite and Dash.</p>
 						</div>
-						<!-- Tictactoe -->
-						<div class="col-lg-5 mx-3 mt-3 my-md-2 con border rounded p-0 div-border">
-							<img src="./images/tictactoe.jpg" alt="tictactoe" class="image" >
-							<div class="middle">
-								<p class="red-text">Featured Project</p>
-								<h3>Tictactoe</h3>
-								<p>A beginner project built with Flask and implemented using Python OOP principles.</p>
-							</div>
+					</div>
+					<!-- Tictactoe -->
+					<div class="col-lg-5 mx-3 mt-3 my-md-2 con border rounded p-0 div-border">
+						<img src="./images/tictactoe.jpg" alt="tictactoe" class="project-image" >
+						<div class="middle">
+							<p class="red-text">Featured Project</p>
+							<h3>Tictactoe</h3>
+							<p>A beginner project built with Flask and implemented using Python OOP principles.</p>
 						</div>
+					</div>
 				</div>
 			</section>
 			<!-- End of Projects -->
 			<!-- Start of Experience -->
-			<section id="my-experience" class="mx-auto ml-lg-5 my-5 py-5">
+			<section id="experience_section" class="mx-auto ml-lg-5 my-5 py-5">
 				<h2>Experience</h2>
 				<div class="red-line"></div>
 				<div class="mb-5"></div>
 				<!-- Structure -->
 				<div class="tab d-flex flex-row" id="myTopnav">
-					<button class="tablinks flex-fill" onclick="openExperienceTab(event, 'FBQ')" id="defaultOpen">Florida Best Quote</button>
-					<button class="tablinks flex-fill" onclick="openExperienceTab(event, 'JFS')">JFS Electrical Corporation</button>
-					<button class="tablinks flex-fill" onclick="openExperienceTab(event, 'Educ')">Education</button>
+					<button class="tabLinks flex-fill active" id="Educ">Education</button>
+					<button class="tabLinks flex-fill" id="FBQ">Florida Best Quote</button>
+					<button class="tabLinks flex-fill" id="JFS">JFS Electrical Corporation</button>
 					<button href="javascript:void(0);" class="icon" onclick="experienceNavHamburger()">
-					<i class="fa fa-bars"></i>
+						<i class="fa fa-bars"></i>
 					</button>
 				</div>
-				<div id="FBQ" class="tabcontent">
-					<span><i>September 2020 to Present</i></span>
-					<ul>
-						<li class="mt-2">Provided in depth analysis on the annual performance of the agency using data analysis.</li>
-						<li>Specialized in quoting homeowners insurance policies.</li>
-						<li>Trained and managed virtual assistants in handling mortgage requests, cancellations, and payments.</li>
-					</ul>
-				</div>
-				<div id="JFS" class="tabcontent">
-					<span ><i>March 2019 - June 2019</i></span>
-					<ul>
-						<li class="mt-2">Power and lighting layout of different projecrs such as a hospital, a hotel, a small commercial building and residential buildings.</li>
-						<li>Project cost estimation for the designed electrical layouts.</li>
-						<li>Voltage drop and short circuit calculations.</li>
-					</ul>
-				</div>
-				<div id="Educ" class="tabcontent">
+				<div id="EducContent" class="tabContent active">
 					<p class="mb-0"><strong>Bachelor of Science in Electrical Engineering major in Power Systems Design</strong>
 						<p class="mb-0">Ateneo de Davao University</p>
-					<span><i>2015 - 2020</i></span>
-					<ul>
-						<li class="mt-2">Graduated Cum Laude</li>
-						<li>School of Engineering and Architecture Awardee</li>
-						<li>Mission Awardee</li>
-						<li>Most Outstanding 4th Year student nominee</li>
-						<li>Thesis: <i>Design and Testing of a Dual Rotor Single Stator Generator for Pico-Scale Energy Applications</i></li>
-					</ul>
-					<p class="mt-3 mb-0"><strong>Full Stack Web Development Bootcamp</strong>
-					<p class="mb-0">Zuitt</p>
-					<span><i>2021 - Present</i></span>
-					<p class="mt-3 mb-0"><strong>Certificates</strong>
-					<ul>
-						<li class="mt-2">Automating the Boring Stuff with Python programming course</li>
-						<li>Python for Everybody</li>
-						<li>Getting Grounded on Analytics</li>
-						<li>Responsive Web Design - FreeCodeCamp</li>
-					</ul>
-				</div>
-			</section>
-			<section id="my-contact" class="mx-auto ml-lg-5 my-5 pt-5">
-				<div class="row">
-					<div class="col-12 text-center">
-						<h2>Get In Touch</h2>
-					</div>
-					<div class="d-flex flex-row justify-content-center text-center px-5">
-						<p class="col-sm-6">I'm happy to answer any questions about me or any projects. Just send me a message with any questions you have and I'll get back to you as soon as I can.</p>
-					</div>
-				</div>
-				<div class="d-flex flex-column align-items-center mt-3">
-					<div class="border rounded-pill text-center p-3 border-custom" onclick="sendEmail();">Send Message</div>
-					<div class="mt-5">
-						<a href="https://github.com/AmirJSC" target="_blank" class="blue-remove"><li class="fab fa-github fa-lg mx-4"></li></a>
-						<a href="https://gitlab.com/amirj.castaneda" target="_blank" class="blue-remove"><li class="fab fa-gitlab fa-lg mx-4"></li></a>
-						<a href="https://www.linkedin.com/in/amir-jann-casta%C3%B1eda-7383271a0/" target="_blank" class="blue-remove"><li class="fab fa-linkedin fa-lg mx-4"></li></a>
-					</div>
-				</div>
-		</main>
-		<!-- JS Dependencies -->
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-		<!-- Font Awesome -->
-		<script src="https://kit.fontawesome.com/7a46a783b9.js" crossorigin="anonymous"></script>
-		<!-- Open as Default the FBQ Experience Tab -->
-		<script> document.getElementById("defaultOpen").click(); </script>
-	</body>
-</html>
+						<span><i>2015 - 2020</i></span>
+						<ul>
+							<li class="mt-2">Graduated Cum Laude</li>
+							<li>School of Engineering and Architecture Awardee</li>
+							<li>Mission Awardee</li>
+							<li>Most Outstanding 4th Year student nominee</li>
+							<li>Thesis: <i>Design and Testing of a Dual Rotor Single Stator Generator for Pico-Scale Energy Applications</i></li>
+						</ul>
+						<p class="mt-3 mb-0"><strong>Full Stack Web Development Bootcamp</strong>
+							<p class="mb-0">Zuitt</p>
+							<span><i>2021 - Present</i></span>
+							<p class="mt-3 mb-0"><strong>Certificates</strong>
+								<ul>
+									<li class="mt-2">Automating the Boring Stuff with Python programming course</li>
+									<li>Python for Everybody</li>
+									<li>Getting Grounded on Analytics</li>
+									<li>Responsive Web Design - FreeCodeCamp</li>
+								</ul>
+							</div>
+							<div id="FBQContent" class="tabContent">
+								<span><i>September 2020 to Present</i></span>
+								<ul>
+									<li class="mt-2">Provided excellent service to my client on policy administration, underwriting, and back-office operations support.</li>
+									<li>Specialized in quoting homeowners insurance policies.</li>
+									<li>Trained and managed virtual assistants in handling mortgage requests, cancellations, and payments.</li>
+								</ul>
+							</div>
+							<div id="JFSContent" class="tabContent">
+								<span ><i>March 2019 - June 2019</i></span>
+								<ul>
+									<li class="mt-2">Power and lighting layout of different projecrs such as a hospital, a hotel, a small commercial building and residential buildings.</li>
+									<li>Project cost estimation for the designed electrical layouts.</li>
+									<li>Voltage drop and short circuit calculations.</li>
+								</ul>
+							</div>
+						</section>
+						<section id="contact_section" class="mx-auto ml-lg-5 my-5 pt-5">
+							<div class="row">
+								<div class="col-12 text-center">
+									<h2>Get In Touch</h2>
+								</div>
+								<div class="d-flex flex-row justify-content-center text-center px-5">
+									<p class="col-sm-6">I'm happy to answer any questions about me or any projects. Just send me a message with any questions you have and I'll get back to you as soon as I can.</p>
+								</div>
+							</div>
+							<div class="d-flex flex-column align-items-center mt-3">
+								<div class="border rounded-pill text-center p-3 custom-border" onclick="sendEmail();">Send Message</div>
+								<div class="mt-5">
+									<a href="https://github.com/AmirJSC" target="_blank" class="blue-remove"><li class="fab fa-github fa-lg mx-4"></li></a>
+									<a href="https://gitlab.com/amirj.castaneda" target="_blank" class="blue-remove"><li class="fab fa-gitlab fa-lg mx-4"></li></a>
+									<a href="https://www.linkedin.com/in/amir-jann-casta%C3%B1eda-7383271a0/" target="_blank" class="blue-remove"><li class="fab fa-linkedin fa-lg mx-4"></li></a>
+								</div>
+							</div>
+						</main>
+						<!-- JS Dependencies -->
+						<script src="./index.js"></script>
+						<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+						<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+						<!-- Font Awesome -->
+						<script src="https://kit.fontawesome.com/7a46a783b9.js" crossorigin="anonymous"></script>
+					</body>
+					</html>

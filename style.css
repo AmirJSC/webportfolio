@@ -4,318 +4,397 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300&family=Titillium+Web:wght@300;600&display=swap');
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Titillium Web', sans-serif;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Titillium Web', sans-serif;
 }
 
 html {
 	scroll-behavior: smooth;  
+ height: 100%;
 }
 
-.nav-menu a + a::before {
-  content:  "|";
-  padding: 2rem;
+body {
+ height: 100%;
 }
 
-#name-text {
+main {
+ height: 100%;
+}
+
+ul {
+ list-style: none; 
+}
+
+ul li::before {
+ content: "\2022";  
+ color: #E45447;
+ font-weight: bold; 
+ display: inline-block; 
+ width: 1em; 
+ margin-left: -1em; 
+}
+
+.circle {
+ line-height: 24px;
+ border-radius: 50%;
+ width: 35px;
+ height: 35px;
+ font-size: 20px;
+ color: #E45447;
+ text-align: center;
+ border: 3px solid #E45447;
+}
+
+.red-text {
+   color: #E45447;
+}
+
+.red-line {
+   position: absolute;
+   background-color: #E45447;
+   border-radius: 100%;
+   height: 7.5px;
+   width: 7.5px;
+}
+
+.red-line::after {
+ content: "";
+ position: absolute;
+ background: #E45447;
+ box-sizing: border-box;
+ height: 2.4px;
+ width: 150px;
+ top: 3.1px;
+ left: 0px;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Start of Landing Page */
+
+.nav-link:hover {
+   color: #E45447 !important;
+}
+
+#landing {
+ height: 100%;
+ widht: 100%;
+}
+
+#my_name {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	color: #202020;
 }
 
-#todo {
+#tagline {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
-  background-image: linear-gradient(45deg,#E45447 10%,#ff9966 60%, #f3ec78 100%);
-	background-size: 100%;
-	background-repeat: repeat;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; 
+ background-image: linear-gradient(45deg,#E45447 10%,#ff9966 60%, #f3ec78 100%);
+ background-size: 100%;
+ background-repeat: repeat;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent; 
 }
 
-.red-text {
-	color: #E45447;
+.landing-fontsize {
+ font-size: 4vw;
 }
 
-.red-line {
-	position: absolute;
-	background-color: #E45447;
-	border-radius: 100%;
-	height: 7.5px;
-	width: 7.5px;
+#landing_text {
+ width: 50%;
 }
 
-.red-line::after {
-  content: "";
-  position: absolute;
-  background: #E45447;
-  box-sizing: border-box;
-  height: 2.4px;
-  width: 150px;
-  top: 3.1px;
-  left: 0px;
+.custom-border {
+ width: 18%;
+ color: white;
+ background-color:#E45447 ;
+ cursor: pointer;
 }
 
-ul {
-  list-style: none; 
+#moving_gif {
+ height: 100px;
+ width: auto;
 }
 
-ul li::before {
-  content: "\2022";  
-  color: #E45447;
-  font-weight: bold; 
-  display: inline-block; 
-  width: 1em; 
-  margin-left: -1em; 
+/* For the moving animation */
+#my_name {
+ animation: glitch 1s linear infinite;
 }
 
-/* Removing the Blue in anchor tag */
-.blue-remove {
-    color: #303030;
-    text-decoration: none;
-    min-width: 200% !important;
+@keyframes glitch{
+ 2%,64%{
+  transform: translate(3px,0) skew(0deg);
+}
+4%,60%{
+  transform: translate(-3px,0) skew(0deg);
+}
+62%{
+  transform: translate(0,0) skew(5deg); 
+}
 }
 
-.blue-remove:hover {
-    color:#E45447; 
-    text-decoration:none; 
-    cursor:pointer;  
+#my_name:before,
+#my_name:after{
+ content: attr(title);
+ position: absolute;
+ left: 0;
 }
 
-/* Project Section - Images */
-.image {
-  opacity: 1;
-  width: 100%;
-  height: auto;
-  transition: .8s ease;
+#my_name:before{
+ animation: glitchTop 1s linear infinite;
+ clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+ -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+ 2%,64%{
+  transform: translate(2px,-2px);
+}
+4%,60%{
+  transform: translate(-2px,2px);
+}
+62%{
+  transform: translate(13px,-1px) skew(-13deg); 
+}
+}
+
+#my_name:after{
+ animation: glitchBotom 1.5s linear infinite;
+ clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+ -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+ 2%,64%{
+  transform: translate(-2px,0);
+}
+4%,60%{
+  transform: translate(-2px,0);
+}
+62%{
+  transform: translate(-22px,5px) skew(21deg); 
+}
+}
+/* End of Landing Page */
+
+/* ---------------------------------------------------------------------------- */
+
+/* Start of About Section */
+#resume_button {
+ width: 40%;
+ color: white;
+ background-color:#E45447 ;
+ cursor: pointer;
+}
+/* End of About Section */
+
+/* ---------------------------------------------------------------------------- */
+
+/* Start of Project Section */
+.project-image {
+ opacity: 1;
+ width: 100%;
+ height: auto;
+ transition: .8s ease;
 }
 
 .middle {
-  transition: .8s ease;
-  width: 100%;
-  height: auto;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+ transition: .8s ease;
+ width: 100%;
+ height: auto;
+ opacity: 0;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ text-align: center;
 }
 
-.con:hover .image {
-	opacity: .08;
+.con:hover .project-image {
+ opacity: .08;
 }
 
 .con:hover .middle {
-	opacity: 1;
+ opacity: 1;
 }
 
 /* Image Border and Shadow*/
 .div-border {
-  box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+ box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
+/* End of Projection Section */
 
-/* For Responsive Webpage */
-.intro-font {
-	font-size: 4vw;
-}
+/* ---------------------------------------------------------------------------- */
 
-#landing-text {
-	width: 50%;
-}
-
-/* For the Check out my blog! button */
-.border-custom {
-	width: 18%;
-    color: white;
-    background-color:#E45447 ;
-}
-
-#moving-gif {
-	height: 100px;
-	width: auto;
-}
-
-@media only screen and (max-width: 2000px) {
-    .border-custom {
-  width: 20%;
-  }
-}
-
-@media only screen and (max-width: 1500px) {
-    .intro-font {
-      font-size: 7vmin;
-   }
-    #name-text {
-      font-size: 7vmin;
-   }
-    #landing-text {
-      width: 70%;
-  }
-    .border-custom {
-	width: 25%;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-    #landing-text {
-      width: 100%;
-     }
-    .border-custom {
-	   width: 30%;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-    #landing-text {
-      width: 100%;
-   }
-    .intro-font {
-      font-size: 10vmin;
-   }
-    #name-text {
-      font-size: 10vmin;
-   }
-    .border-custom {
-	width: 60%;
-	}
-}
-
-.circle {
-  line-height: 24px;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  font-size: 20px;
-  color: #E45447;
-  text-align: center;
-  border: 3px solid #E45447;
-}
-
+/* Start of Experience Section */
 .tab {
-  overflow: hidden;
-  border-top: 2px solid #E0E0E0;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+ overflow: hidden;
+ border-top: 2px solid #E0E0E0;
+ width: 70%;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 .tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
+ background-color: inherit;
+ float: left;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+ font-size: 17px;
 }
 
-.tabcontent {
-  display: none;
-  padding: 25px 12px;
-  border-top: none;
+.tabContent {
+ display: none;
+ padding: 25px 12px;
+ border-top: none;
 }
 
 .tab .icon {
-  display: none;
+ display: none;
 }
 
 .tab button:hover {
-  background-color: #F0F0F0;
-  color: black;
+ background-color: #F0F0F0;
+ color: black;
 }
 
 .tab button.active {
-  background-color: #F0F0F0;
-  color: #E45447;
+ background-color: #F0F0F0;
+ color: #E45447;
 }
 
 .tab .icon {
-  display: none;
+ display: none;
+}
+
+.active {
+ display: block;
+}
+/* End of Experience Section */
+
+/* ---------------------------------------------------------------------------- */
+
+/* Start of Footer Section:  Removing the Blue in anchor tag */
+.blue-remove {
+ color: #303030;
+}
+
+.blue-remove:hover {
+ color:#E45447; 
+ cursor:pointer;  
+}
+/* End of Footer Section:  Removing the Blue in anchor tag */
+
+/* ---------------------------------------------------------------------------- */
+
+
+@media only screen and (min-width: 2000px) {
+ .custom-border {
+  width: 15%;
+}
+#my_name {
+  font-size: 7vmin;
+}
+#landing_text {
+  width: 40%;
+}
+}
+
+@media only screen and (max-width: 2000px) {
+ .custom-border {
+  width: 20%;
+}
+}
+
+@media only screen and (max-width: 1500px) {
+ .landing-fontsize {
+  font-size: 7vmin;
+}
+#my_name {
+  font-size: 7vmin;
+}
+#landing_text {
+  width: 50%;
+}
+.custom-border {
+   width: 25%;
+}
+
+#resume_button {
+ width: 30%;
+ color: white;
+ background-color:#E45447 ;
+ cursor: pointer;
+}
+}
+
+@media only screen and (max-width: 768px) {
+ #landing_text {
+  width: 70%;
+}
+.custom-border {
+  width: 35%;
+}
 }
 
 @media screen and (max-width: 600px) {
-  .tab button:not(:first-child) {display: none;}
-  .tab button.icon {
-    float: right;
-    display: block;
-  }
+ .tab button:not(:first-child) {display: none;}
+ .tab button.icon {
+  float: right;
+  display: block;
 }
 
-@media screen and (max-width: 600px) {
-  .tab.responsive {position: relative;}
-  .tab.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .tab.responsive button {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-/* For the moving animation */
-#name-text{
-  animation: glitch 1s linear infinite;
-}
-
-@keyframes glitch{
-  2%,64%{
-    transform: translate(3px,0) skew(0deg);
-  }
-  4%,60%{
-    transform: translate(-3px,0) skew(0deg);
-  }
-  62%{
-    transform: translate(0,0) skew(5deg); 
-  }
-}
-
-#name-text:before,
-#name-text:after{
-  content: attr(title);
+.tab.responsive {position: relative;}
+.tab.responsive .icon {
   position: absolute;
-  left: 0;
+  right: 0;
+  top: 0;
 }
 
-#name-text:before{
-  animation: glitchTop 1s linear infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+.tab.responsive button {
+  float: none;
+  display: block;
+  text-align: left;
 }
 
-@keyframes glitchTop{
-  2%,64%{
-    transform: translate(2px,-2px);
-  }
-  4%,60%{
-    transform: translate(-2px,2px);
-  }
-  62%{
-    transform: translate(13px,-1px) skew(-13deg); 
-  }
+#profile_picture {
+   height: 70%;
+   width: auto;
+   /*filter: saturate(3);*/
+}
+#resume_button {
+ width: 50%;
+ color: white;
+ background-color:#E45447 ;
+ cursor: pointer;
+}
 }
 
-#name-text:after{
-  animation: glitchBotom 1.5s linear infinite;
-  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+@media only screen and (max-width: 480px) {
+ #landing_text {
+  width: 100%;
+}
+.landing-fontsize {
+  font-size: 10vmin;
+}
+#my_name {
+  font-size: 10vmin;
+}
+.custom-border {
+  width: 60%;
+}
 }
 
-@keyframes glitchBotom{
-  2%,64%{
-    transform: translate(-2px,0);
-  }
-  4%,60%{
-    transform: translate(-2px,0);
-  }
-  62%{
-    transform: translate(-22px,5px) skew(21deg); 
-  }
+@media only screen and (max-width: 300px) {
+ .custom-border {
+  width: 80%;
 }
+}
+
