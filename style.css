@@ -197,8 +197,14 @@ ul li::before {
 .project-image {
  opacity: 1;
  width: 100%;
- height: auto;
+ height: 100%;
  transition: .8s ease;
+ cursor: pointer;
+}
+
+/* Image Border and Shadow*/
+.project-border {
+ box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
 .middle {
@@ -212,19 +218,15 @@ ul li::before {
  transform: translate(-50%, -50%);
  -ms-transform: translate(-50%, -50%);
  text-align: center;
+ cursor: pointer;
 }
 
-.con:hover .project-image {
+.project-border:hover .project-image {
  opacity: .08;
 }
 
-.con:hover .middle {
+.project-border:hover .middle {
  opacity: 1;
-}
-
-/* Image Border and Shadow*/
-.div-border {
- box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
 /* End of Projection Section */
 
@@ -328,11 +330,15 @@ ul li::before {
 }
 
 #resume_button {
- width: 30%;
- color: white;
- background-color:#E45447 ;
- cursor: pointer;
+ width: 40%;
 }
+
+}
+@media only screen and (max-width: 1200px) {
+#resume_button {
+ width: 30%;
+}
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -367,13 +373,10 @@ ul li::before {
 #profile_picture {
    height: 70%;
    width: auto;
-   /*filter: saturate(3);*/
 }
+
 #resume_button {
- width: 50%;
- color: white;
- background-color:#E45447 ;
- cursor: pointer;
+ width: 40%;
 }
 }
 
@@ -389,6 +392,10 @@ ul li::before {
 }
 .custom-border {
   width: 60%;
+}
+#profile_picture {
+   height: 60%;
+   width: auto;
 }
 }
 
