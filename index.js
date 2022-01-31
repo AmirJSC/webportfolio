@@ -1,7 +1,31 @@
+window.addEventListener('scroll', revealElements);
 let tabLinks = document.getElementsByClassName("tabLinks");
-
 for (let i=0; i < tabLinks.length; i++) {
 	tabLinks[i].addEventListener('click', openExperienceTab);
+}
+
+function revealElements() {
+	var elementsToReveal = document.querySelectorAll('.reveal');
+
+	for (var i=0; i<elementsToReveal.length; i++) {
+		var windowHeight = window.innerHeight;
+		var elementsDistanceFromTop = elementsToReveal[i].getBoundingClientRect().top;
+		var revealPoint = 50;
+
+		if(elementsDistanceFromTop < windowHeight - revealPoint){
+          elementsToReveal[i].classList.add('active');
+        }
+	}
+}
+
+
+function experienceNavHamburger() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "tab") {
+		x.className += " responsive";
+	} else {
+		x.className = "tab";
+	}
 }
 
 function openExperienceTab(event) {
@@ -17,15 +41,6 @@ function openExperienceTab(event) {
 
 	document.querySelector(`#${event.target.id}`).classList.add("active");
 	document.querySelector(`#${event.target.id}Content`).classList.add("active");
-}
-
-function experienceNavHamburger() {
-	var x = document.getElementById("myTopnav");
-	if (x.className === "tab") {
-		x.className += " responsive";
-	} else {
-		x.className = "tab";
-	}
 }
 
 function sendEmail() {
