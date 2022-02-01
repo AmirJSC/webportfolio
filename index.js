@@ -1,11 +1,12 @@
-window.addEventListener('scroll', revealElements);
+window.addEventListener('scroll', revealElementsOnScroll);
+window.addEventListener('load', revealElementsOnLoad);
 let tabLinks = document.getElementsByClassName("tabLinks");
 for (let i=0; i < tabLinks.length; i++) {
 	tabLinks[i].addEventListener('click', openExperienceTab);
 }
 
-function revealElements() {
-	var elementsToReveal = document.querySelectorAll('.reveal');
+function revealElementsOnScroll() {
+	var elementsToReveal = document.querySelectorAll('.reveal-onScroll');
 
 	for (var i=0; i<elementsToReveal.length; i++) {
 		var windowHeight = window.innerHeight;
@@ -16,6 +17,21 @@ function revealElements() {
           elementsToReveal[i].classList.add('active');
         }
 	}
+}
+
+function revealElementsOnLoad() {
+	var elementsToReveal = document.querySelectorAll('.reveal-onLoad');
+	var length = elementsToReveal.length;
+	var i = 0;
+
+	var interval = setInterval(function() { 
+		elementsToReveal[i].classList.add('active');
+		i++;
+		if (i > length - 1) {
+			document.querySelector('#my_name').classList.add('glitch');
+			clearInterval(interval);
+		}
+	}, 150)
 }
 
 
