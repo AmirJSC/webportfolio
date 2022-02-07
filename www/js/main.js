@@ -1,5 +1,6 @@
 window.addEventListener('scroll', revealElementsOnScroll);
 window.addEventListener('load', revealElementsOnLoad);
+
 let tabLinks = document.getElementsByClassName("tabLinks");
 for (let i=0; i < tabLinks.length; i++) {
 	tabLinks[i].addEventListener('click', openExperienceTab);
@@ -9,20 +10,20 @@ function revealElementsOnScroll() {
 	var elementsToReveal = document.querySelectorAll('.reveal-onScroll');
 
 	for (var i=0; i<elementsToReveal.length; i++) {
-		var windowHeight = window.innerHeight;
-		var elementsDistanceFromTop = elementsToReveal[i].getBoundingClientRect().top;
-		var revealPoint = 50;
+		var windowHeight = window.innerHeight,
+		    elementsDistanceFromTop = elementsToReveal[i].getBoundingClientRect().top,
+		    revealPoint = 50;
 
 		if(elementsDistanceFromTop < windowHeight - revealPoint){
-          elementsToReveal[i].classList.add('active');
+        	elementsToReveal[i].classList.add('active');
         }
 	}
 }
 
 function revealElementsOnLoad() {
-	var elementsToReveal = document.querySelectorAll('.reveal-onLoad');
-	var length = elementsToReveal.length;
-	var i = 0;
+	var elementsToReveal = document.querySelectorAll('.reveal-onLoad'),
+	    length = elementsToReveal.length,
+	    i = 0;
 
 	var interval = setInterval(function() { 
 		elementsToReveal[i].classList.add('active');
@@ -46,6 +47,7 @@ function experienceNavHamburger() {
 
 function openExperienceTab(event) {
 	var i, tabLinks, tabContent;
+	
 	tabLinks = document.getElementsByClassName("tabLinks");
 	tabContent = document.getElementsByClassName("tabContent");
 	for (i = 0; i < tabLinks.length; i++) {

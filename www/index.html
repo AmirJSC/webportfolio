@@ -6,7 +6,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	<!-- style.css -->
-	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<!-- Title -->
 	<title>Amir Castañeda</title>
 	<!-- Title Icon -->
@@ -69,15 +69,13 @@
 			<div class="mb-5"></div>
 			<div class="row">
 				<div class="d-flex flex-column align-items-center justify-content-center col-lg-5 mx-auto order-lg-2">
-					<img src="./images/profile-picture1.jpeg" class="border rounded-pill" alt="Profile picture" id="profile_picture">
-					<div class="border rounded-pill text-center p-3 mt-4 my-md-4" id="resume_button">
-						<span>Resume</span>
-					</div>
+					<img src="./assets/images/profile-picture1.jpeg" class="border rounded-pill" alt="Profile picture" id="profile_picture">
+					<form action="./assets/Resume.pdf" target="_blank" class="border rounded-pill text-center p-3 mt-4 my-md-4" id="resume_form">
+						<button value="resume">Resume</button>
+					</form>
 				</div>
 				<div class="col-lg-7 order-lg-1 mx-0 pr-sm-0">
-					<p>I am Amir and I am passionate about Web Development and Automation. My interest in programming started back in
-							2017 when I made a <span class="red-text">Tic tac Toe game in C#</span> for my first programming class. Ever since then,
-						whenever we had group projects in my engineering classes, I was the guy who worked with code.</p>
+					<p>I am Amir and I love Programming. My interest in coding started when I made a <span class="red-text">Tic tac Toe game in C#</span> for my first programming class. I always loved math and I found that coding was a creative and practical application of mathematical thinking. Ever since then, whenever we had group projects in my engineering classes, I was the guy who worked with code.</p>
 
 					<p>Presently, I am attending a <span class="red-text">Full-stack Web Development Bootcamp</span> where we focus on learning the MERN stack. I continue to hone
 							my skills in Python from several books and online courses from which I made personal projects. My main focus these days
@@ -88,14 +86,14 @@
 						<div class="row">
 							<ul class="ml-4 col-5">
 								<li>MongoDB</li>
+								<li>EXpress.js</li>
 								<li>React</li>
-								<li>Node.js</li>
 							</ul>							
 							<ul class="col-5">
-								<li>Django</li>
-								<li>EXpress.js</li>
+								<li>Node.js</li>
+								<li>Python</li>
 								<li>Bootsrap</li>
-							</ul>
+							</ul>   
 						</div>
 					</p>
 				</div>
@@ -111,7 +109,7 @@
 			<div class="row">
 				<!-- Pomodoro Webapp -->
 				<div class="col-lg-5 mx-3 my-md-2 p-0 rounded project-border">
-					<img src="./images/Pomodoro-webapp.png" alt="Indeed Scraper" class="project-image rounded" >
+					<img src="./assets/images/Pomodoro-webapp.png" alt="Indeed Scraper" class="project-image rounded" >
 					<div class="middle">
 						<p class="red-text">Featured Project</p>
 						<h3>Pomodoit</h3>
@@ -120,7 +118,7 @@
 				</div>
 				<!-- Node.js API -->
 				<div class="col-lg-5 mx-3 mt-3 my-md-2 p-0 rounded project-border">
-					<img src="./images/E-commerce website.png" alt="tictactoe" class="project-image rounded" >
+					<img src="./assets/images/E-commerce website.png" alt="tictactoe" class="project-image rounded" >
 					<div class="middle">
 						<p class="red-text">Featured Project</p>
 						<h3>E-commerce API</h3>
@@ -132,7 +130,7 @@
 			<div class="row my-3">
 				<!-- Web Blog -->
 				<div class="col-lg-5 mx-3 my-md-2 rounded p-0 project-border">
-				<img src="./images/Django blog.png" alt="Indeed Scraper" class="project-image rounded" >
+				<img src="./assets/images/Django blog.png" alt="Indeed Scraper" class="project-image rounded" >
 					<div class="middle">
 						<p class="red-text">Featured Project</p>
 						<h3>Web Blog</h3>
@@ -141,7 +139,7 @@
 				</div>
 				<!-- Website -->
 				<div class="col-lg-5 mx-3 mt-3 my-md-2 rounded p-0 project-border">
-					<img src="./images/portfolio-website.png" alt="tictactoe" class="project-image rounded" >
+					<img src="./assets/images/portfolio-website.png" alt="tictactoe" class="project-image rounded" >
 					<div class="middle">
 						<p class="red-text">Featured Project</p>
 						<h3>Portfolio Website</h3>
@@ -153,7 +151,7 @@
 			<div class="row">
 				<!-- Indeed Scraper -->
 				<div class="col-lg-5 justify-content-center mx-3 my-md-2 rounded p-0 project-border">
-					<img src="./images/indeed scraper.png" alt="Indeed Scraper" class="project-image rounded" >
+					<img src="./assets/images/indeed scraper.png" alt="Indeed Scraper" class="project-image rounded" >
 					<div class="middle">
 						<p class="red-text">Featured Project</p>
 						<h3>Indeed Scraper</h3>
@@ -243,7 +241,7 @@
 		<!-- End of Contact Section -->
 	</main>
 	<!-- JS Dependencies -->
-	<script src="./index.js"></script>
+	<script src="./js/main.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 	<!-- Font Awesome -->
