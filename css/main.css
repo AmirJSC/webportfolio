@@ -23,6 +23,14 @@ body {
   color: #E45447;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: white;
+}
+
 .red-line {
   position: absolute;
   background-color: #E45447;
@@ -265,6 +273,7 @@ div .wave.wave4 {
   color: white;
   background-color:#E45447 ;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #resume_form > button {
